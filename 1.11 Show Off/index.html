@@ -1,10 +1,33 @@
-<!-- Website is located at cjhessportfolio.com -->
+<!-- 
+    Website is located at cjhessportfolio.com
+    CSS Generators:
+         - cssgradient.io
+         - https://html-css-js.com/css/generator/
+         - https://rgbcolorcode.com/
+
+    Struggles:
+    Picture
+-->
 <!DOCTYPE html>
 <html>
     <head>
         <title>CJ Hess's Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/toast.css">
+        <script type="text/javascript">
+            function toggle() {
+                let element = document.getElementById("dogPic");
+                let hidden = element.getAttribute("hidden");
+    
+                if (hidden) {
+                    element.removeAttribute("hidden");
+                } else {
+                    element.setAttribute("hidden", "hidden");
+                
+                }
+            }
+        </script>
         <style>
             .title {
                 display: block;
@@ -14,8 +37,6 @@
                 font-family: Arial;
                 text-align: center;
                 justify-content: center;
-                margin-left: auto;
-                margin-right: auto;
                 height: 100px;
                 width: 500px;
                 padding: 10px;
@@ -23,6 +44,11 @@
             body {
                 background: rgb(83,81,107);
                 background: linear-gradient(90deg, rgba(83,81,107,1) 0%, rgba(77,153,164,0.9332107843137255) 35%, rgba(0,149,67,1) 100%);
+            }
+            p {
+                font-family: Arial;
+                color: white;
+                font-size: 2pc;
             }
             #siteTitle {
                 background: #CE5937;
@@ -34,5 +60,14 @@
     </head>
     <body>
         <div class="title" id="siteTitle">CJ Hess's Portfolio</div>
+        <div class="grid">
+            <div class="grid__col grid__col--1-of-2">
+                <p>This website will be where I do my projects for Web Design 1 (and probably Web Design 2). Here is one of my favority card arts from Magic the Gathering.</p>
+                <button onclick="toggle()">Toggle Picture</button>
+            </div>
+            <div class="grid__col grid__col--1-of-2">
+                <img id="dogPic" src="images/urza-lha-art.jpg" alt="Urza, Lord High Artificer" hidden="hidden" width="500">
+            </div>
+        </div>
     </body>
 </html>
