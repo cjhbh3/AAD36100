@@ -50,13 +50,13 @@
                 width: 500px;
                 padding: 10px;
             }
-            body {
+            .body {
                 background: rgb(83,81,107);
                 background: linear-gradient(90deg, rgba(83,81,107,1) 0%, rgba(77,153,164,0.9332107843137255) 35%, rgba(0,149,67,1) 100%);
             }
             p {
                 font-family: Arial;
-                color: white;
+                color: black;
                 font-size: 2pc;
             }
             #siteTitle {
@@ -68,15 +68,22 @@
         </style>
     </head>
     <body>
-        <div class="title" id="siteTitle">CJ Hess's Portfolio</div>
-        <div class="grid">
-            <div class="grid__col grid__col--1-of-2">
-                <p>This website will be where I do my projects for Web Design 1 (and probably Web Design 2). Here is one of my favority card arts from Magic the Gathering.</p>
-                <button onclick="toggle()">Toggle Picture</button>
+        <header>
+            <h1>CJ Hess's Portfolio</h1>
+        </header>
+        <section id="main">
+            <div class="grid"> <!-- Wrapper class-->
+                <div class="grid__col grid__col--1-of-2">
+                    <p>This website will be where I do my projects for Web Design 1 (and probably Web Design 2). Here is one of my favority card arts from Magic the Gathering.</p>
+                    <button onclick="toggle()">Toggle Picture</button>
+                </div>
+                <div class="grid__col grid__col--1-of-2">
+                    <img id="mtgPic" src="images/urza-lha-art.jpg" alt="Urza, Lord High Artificer" hidden="hidden" width="500">
+                </div>
             </div>
-            <div class="grid__col grid__col--1-of-2">
-                <img id="mtgPic" src="images/urza-lha-art.jpg" alt="Urza, Lord High Artificer" hidden="hidden" width="500">
-            </div>
-        </div>
+        </section>
+        <footer>
+            <p>Footer Information</p>
+        </footer>
     </body>
 </html>
