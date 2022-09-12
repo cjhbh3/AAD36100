@@ -1,0 +1,93 @@
+<!-- 
+    Website is located at cjhessportfolio.com
+    CSS Generators:
+         - cssgradient.io
+         - https://html-css-js.com/css/generator/
+         - https://rgbcolorcode.com/
+
+    Struggles:
+        - Figuring out a way to have my header appear below nav bar
+
+    Above and Beyond:
+        - Utilized jQuery for two things:
+            1. if you click on the second picture, it will change the image source
+            2. if you hover the mouse over the third picture (mouse enter is the trigger), it also changes the image source
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CJ Hess's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var teferiPic = $("#teferiPic");
+                var karnPic = $("#karnPic");
+
+                teferiPic.click(function() {
+                    if (teferiPic.attr("src") == "images/teferi-sunset.jpg") {
+                        teferiPic.attr("src", "images/teferi-dominaria.jpg");
+                    }
+                    else {
+                        teferiPic.attr("src", "images/teferi-sunset.jpg");
+                    }
+                });
+
+                karnPic.mouseenter(function() {
+                    if (karnPic.attr("src") == "images/karn-scion.jpg") {
+                        karnPic.attr("src", "images/karn-liberated.jpg");
+                    }
+                    else {
+                        karnPic.attr("src", "images/karn-scion.jpg");
+                    }
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light border">
+           Navigation
+        </nav>
+        <header>
+            <h1>Most Important Characters in Magic the Gathering Lore</h1>
+        </header>
+        <main>
+            <div class="row mb-3 text-center">
+                <div class="col-sm-6 col-lg-8 themed-grid-col">
+                    <img id="urzaPic" src="images/urza-lha-art.jpg" alt="Card art for Urza, Lord High Artificer">
+                    <h1>Urza</h1>
+                    <p>
+                        One of the earliest know planeswalkers in the Magic the Gahtering lore, Urza is arguably the smartest and most crafty planeswalkers in the universe.
+                        During the events of Brother's War, Urza and his brother Mishra headed two opposing armies and begun a tragic battle, ending in Urza deploying machine that destroyed both armies, as well as Mishra.
+                        After this war, Urza would start a life long path of vengeance against the Phyrexians, a race of living machines that had corrupted Mishra.
+                    </p><br>
+                    <img id="teferiPic" src="images/teferi-sunset.jpg" alt="Card art for Teferi, Who Slows the Sunset">
+                    <h1>Teferi</h1>
+                    <p>
+                        During Urza's path of vengeance against the Phyrexians, Urza created a vast school of magic and Technology, known as Tolaria - the Academy. One of Urza's most prized students would
+                        attend this academy, going by the name Teferi. Teferi was a young sorcerer who had a considerable amount of magic potential, but was still very immature. Teferi's attitude would change
+                        pretty quickly as an attack on the Academy by the Phyrexians would leave Teferi in slow-time bubble caused by the destruction of a time machine. Urza and two other students were able
+                        to free Teferi from this slow-time bubble, but the experience would humble and instill the want to be more powerful in him. Teferi would go on to be one of the strongest planeswalkers after 
+                        Urza's death.
+                    </p><br>
+                    <img id="karnPic" src="images/karn-scion.jpg" alt="Card art for Karn, Scion of Urza">
+                    <h1>Karn</h1>
+                    <p>
+                        When Urza built Tolaria, Urza also worked to keep the remnants of a former protege alive. To accomplish this, he created a giant silver golem and infused it with his protege's heartstone
+                        creating the sentient golem, Karn. Karn would become a valuable tool for Urza, as his silver body would allow him to withstand entering temporal rifts without damage occurring.
+                        During his time away from Tolaria, Karn would create his own mathematical perfect plane, known as Argentum. However, this would be corrupted soon by the Phyrexians and renamed Mirrodin.
+                        Well after Urza's death, Karn takes over as the lead of Tolaria and is even mounting the war against the one again rising threat of Phyrexians.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="navbar navbar-expand-md navbar-dark fixed-bottom bg-light border">
+            Footer
+        </footer>
+    </body>
+</html>
