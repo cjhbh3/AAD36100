@@ -1,0 +1,74 @@
+<!-- 
+    Website is located at cjhessportfolio.com
+    CSS Generators:
+         - cssgradient.io
+         - https://html-css-js.com/css/generator/
+         - https://rgbcolorcode.com/
+
+    Bootstrap Components:
+    Navbar: https://getbootstrap.com/docs/5.2/components/navbar/
+
+    Struggles:
+        - Trying to get the hamburger menu to work (figured out I had a missing script)
+
+    Above and Beyond:
+        - Utilized jQuery for two things:
+            1. if you click on the second picture, it will change the image source
+            2. if you hover the mouse over the third picture (mouse enter is the trigger), it also changes the image source
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS and JS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+           
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Restaurant Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="location.html">Location</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="staff.html">Staff</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <header>
+            <h1>Restaurant Name (Pizza Restaurant)</h1>
+        </header>
+        <main>
+            <a href="menu.html">Let's see the Menu</a>
+            <h3>Home menu will mainly have a couple of food related pictures and a stylized button that goes to the menu.</h3>
+        </main>
+        <footer class="navbar navbar-expand-md navbar-dark fixed-bottom bg-light border">
+            Footer
+        </footer>
+    </body>
+</html>
