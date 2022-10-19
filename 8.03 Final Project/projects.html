@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS and JS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+          .summary {
+              margin: 40px 0px;
+              padding: 0px;
+              line-height: 5vh;
+              text-align: center;
+              width: 100%;
+              position: relative;
+              font-size: 2vw;
+            }
+            .projectCont {
+              text-align: left;
+            }
+            .btn-wrap {
+              text-align: center;
+            }
+            .btn {
+              background-color: rgb(255, 71, 26);
+              color: black;
+              padding: 12px 28px;
+              border-radius: 8px;
+            }
+            .btn:hover {
+              background-color: whitesmoke;
+            }
+      </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="workExp.html">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <header>
+            <h1>Projects</h1>
+        </header>
+        <main>
+           <div class="projectCont">
+            <h3>MTG Card Finder</h3>
+            <p>
+              A program that can take a list of Magic the Gathering card names and find if a certain card is in that list. It is currently a work in process as 
+              I want to expand this to a Arduino project that can physically sort through cards and find the desired card. This a personal project as I am a huge Magic the Gathering Fan.
+            </p>
+            <a class="btn" href="https://github.com/cjhbh3/MtgCardFinder">Link to Project</a>
+           </div>
+           <div class="projectCont">
+            <h3>Senior Project</h3>
+            <p>
+              This project was my Senior Project that I worked on with 9 other students. I worked mostly on the frontend of code (so mostly the HTML and PHP). 
+              The project was for Dr. Robbie Hanson, faculty in the Behavioral Science department at Lindenwood University. 
+              The project was supposed to be a web application that would allow Dr Hanson to send out tests to her students to gather analytics that would
+              be used for the Behavioral Science department.
+            </p>
+            <a class="btn" href="https://github.com/cjhbh3/CSC43000-BehavioralScience">Link to Project</a>
+           </div>
+           <div class="projectCont">
+            <h3>STEP Intern Project</h3>
+            <p>
+              This project was actually my project for my first Google internship. Usually the stuff that you work with during an internship isn't open source, but due to the start of the 
+              pandemic, a lot of stuff had changed for my internship. This was a web app that was used a schedule builder for people that wanted to study some kind of topic. The web application
+              would create a schedule for when to study and would gather YouTube videos and Books that could be helpful resources (I primarily worked on that video and book gathering.)
+              There is also a video on the README that showed how the website is used (as it is a not a public website).
+            </p>
+            <a class="btn" href="https://github.com/cjhbh3/step">Link to Project</a>
+           </div>
+        </main>
+    </body>
+</html>

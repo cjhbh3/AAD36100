@@ -1,0 +1,74 @@
+<!-- 
+    Website is located at cjhessportfolio.com
+    Discovery:
+        Google maps has an option for embedding a map link and it provides direct HTML code that you can copy and paste.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cheesy Joe's</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                min-height: 100vh;
+                margin: 0;
+                background-color: rgb(235, 187, 128);
+                overflow-y: scroll;
+            }
+            .brand {
+                margin: 40px 0px;
+                padding: 0px;
+                line-height: 10vh;
+                text-align: center;
+                width: 100%;
+                position: relative;
+                font-size: 10vw;
+            }
+            .btn-wrap {
+              text-align: center;
+            }
+            .logo {
+                display: block;
+                position: relative;
+            }
+            .home-btn {
+              background-color: rgb(255, 71, 26);
+              color: black;
+              padding: 12px 28px;
+              border-radius: 8px;
+            }
+            .home-btn:hover {
+              background-color: whitesmoke;
+            }
+            #cheesy {
+                opacity: 1;
+                color: rgb(255, 71, 26);
+            }
+            #joes {
+                opacity: 1;
+                color: rgb(247, 208, 169);
+            }
+            #pizza {
+                opacity: 1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 class="brand">
+                 <div class="logo animate__animated animate__fadeInDownBig" id="cheesy">Cheesy</div>
+                 <div class="logo animate__animated animate__fadeInLeftBig" id="joes">Joe's</div>
+                 <div class="logo animate__animated animate__fadeInRightBig"><img src="images/pizza-transp.png" id="pizza"></div>
+            </h1>
+            <p class="btn-wrap">
+              <a class="home-btn" href="home.html">Home</a>
+            </p>
+        </main>
+    </body>
+</html>

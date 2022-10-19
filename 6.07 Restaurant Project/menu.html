@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS and JS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+          html, body {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            margin: 0;
+            background-color: rgb(235, 187, 128);
+            overflow-y: scroll;
+          }
+          header {
+            text-align: center;
+          }
+          main {
+            margin: 2vw;
+            column-count: 3;
+            column-width: auto;
+          }
+          img {
+              width:10vw;
+              float:left;
+          }
+          .btn-wrap {
+            text-align: center;
+          }
+          .home-btn {
+            background-color: rgb(255, 71, 26);
+            color: black;
+            padding: 12px 28px;
+            border-radius: 8px;
+          }
+          .home-btn:hover {
+            background-color: whitesmoke;
+          }
+          .column {
+            float: left;
+            width: 33.33%;
+            height: 10%;
+            padding: 5px;
+          }
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          .flex {
+              display: flex;
+              flex-direction: column;
+          }
+
+          @media only screen and (max-width:480px) {
+              main {
+                  margin:2vw;
+                  column-count: 1;
+              }
+          }
+
+          @media only screen and (max-width:768px) and (min-width:481px) {
+              main {
+                  margin:2vw;
+                  column-count: 1;
+              }
+          }
+
+          @media only screen and (max-width:1024px) and (min-width:769px) {
+              main {
+                margin:2vw;
+                column-count: 2;
+              }
+          }
+
+          @media only screen and (max-width:1200px) and (min-width:1025px) {
+              main {
+                  margin:2vw;
+                  column-count: 3;
+              }
+          }
+          #cheesy {
+              opacity: 1;
+              color: rgb(255, 71, 26);
+          }
+          #joes {
+              opacity: 1;
+              color: rgb(247, 208, 169);
+          }
+      </style>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+              <h3>
+                <div id="cheesy">Cheesy</div>
+                <div id="joes">Joe's</div>
+              </h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="location.html">Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+        <header>
+            <h1>Menu</h1>
+        </header>
+        <main>
+           <div class="flex">
+              <h2>Appetizers</h2>
+              <ul>
+                <li>Toasted Ravioli</li>
+                <li>Garlic Bread</li>
+                <li>Cheesy Garlic Bread</li>
+                <li>Breadsticks</li>
+                <li>Cinnamon Breadsticks</li>
+              </ul>
+              <img src="images/cinnamonBreadsticks.jpg">
+            </div>
+            <div class="flex">
+              <h2>Pizza Size and Crusts</h2>
+              <ul>
+                <li>Small - 12 inch</li>
+                <li>Medium - 14 inch</li>
+                <li>Large - 16 inch</li>
+                <li>Thin Crust</li>
+                <li>Thick Crust - Flavors: Garlic Herb, Parmesan, Butter</li>
+              </ul>
+              <img src="images/cheesePizza.png"
+            </div>
+            <div class="flex">
+              <h2>Pizza Toppings</h2>
+              <ul>
+                <li>Cheese</li>
+                <li>Pepperoni</li>
+                <li>Sausage</li>
+                <li>Bacon</li>
+              </ul>
+              <img src="images/buttercheese-img.png">
+            </div>
+        </main>
+        <footer class="navbar navbar-expand-md navbar-dark fixed-bottom bg-light border">
+            Footer
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!-- 
+    Website is located at cjhessportfolio.com
+    CSS Generators:
+         - animate.style
+
+    Above and Beyond:
+        - Utilized jQuery for two things:
+            1. if you click on the second picture, it will change the image source
+            2. if you hover the mouse over the third picture (mouse enter is the trigger), it also changes the image source
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animated Logo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <style>
+            .brand {
+                margin: 40px 0px;
+                padding: 0px;
+                line-height: 10vh;
+                text-align: center;
+                height: 60px;
+                width: 100%;
+                position: relative;
+                font-size: 10vw;
+            }
+            .logo {
+                display: block;
+                position: relative;
+            }
+            #cheesy {
+                opacity: 1;
+                color: rgb(255, 71, 26);
+            }
+            #joes {
+                opacity: 1;
+                color: rgb(255, 166, 77);
+            }
+            #pizza {
+                opacity: 0.5;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 class="brand">
+                 <div class="logo animate__animated animate__fadeInDownBig" id="cheesy">Cheesy</div>
+                 <div class="logo animate__animated animate__fadeInLeftBig" id="joes">Joe's</div>
+                 <div class="logo animate__animated animate__fadeInRightBig"><img src="images/pizza.png" id="pizza"></div>
+            </h1>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!-- 
+    Website is located at cjhessportfolio.com
+    CSS Generators:
+         - cssgradient.io
+         - https://html-css-js.com/css/generator/
+         - https://rgbcolorcode.com/
+
+    Bootstrap Components:
+    Navbar: https://getbootstrap.com/docs/5.2/components/navbar/
+
+    Struggles:
+        - Trying to get the hamburger menu to work (figured out I had a missing script)
+
+    Above and Beyond:
+        - Utilized jQuery for two things:
+            1. if you click on the second picture, it will change the image source
+            2. if you hover the mouse over the third picture (mouse enter is the trigger), it also changes the image source
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS and JS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            .summary {
+              margin: 40px 0px;
+              padding: 0px;
+              line-height: 5vh;
+              text-align: center;
+              width: 100%;
+              position: relative;
+              font-size: 2vw;
+            }
+            .btn-wrap {
+              text-align: center;
+            }
+            .btn {
+              background-color: rgb(255, 71, 26);
+              color: black;
+              padding: 12px 28px;
+              border-radius: 8px;
+            }
+            .btn:hover {
+              background-color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="education.html">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="workExp.html">Work Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <main>
+          <div>
+            <p class="summary">
+              Hello, my name is CJ Hess. I am a Senior at Lindenwood University and I am majoring in Computer Science. My career aspirations are to work in the software development field.
+              My best qualities are my problem-solving abilities, research capabilites, and how much I test my work. Please explore the other pages of this site to see what projects I've worked on, where I have worked,
+              and where I have done my education.
+            </p>
+          </div>
+          <p class="btn-wrap">
+            <a class="btn" href="workExp.html">Work Experience</a>
+            <a class="btn" href="education.html">Education</a>
+            <a class="btn" href="projects.html">Projects</a>
+          </p>
+        </main>
+    </body>
+</html>
